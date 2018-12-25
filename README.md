@@ -13,10 +13,26 @@
 - My program ranks top 5% among more than a hundred of students.
 
 ## Requirements
-Due to some old libraries that are compiled without the flag `-fPIC`, compilation must be done by gcc/g++ that is older than 4.8.5.
+Due to some old libraries that are compiled without the flag `-fPIC`, compilation must be done by gcc/g++ version that is older than 4.8.5.
+
+Compilation is tested on gcc/g++ 4.8.5.
 
 ## Specification
 `spec/FraigProject.pdf`
 
+## File Descriptions
+- `include/*`: Satisfiability solver header files (provided by lecturer).
+- `lib/*`: Libraries that need to be linked (provided by lecturer).
+- `src/*`: Source files (some written by me, others provided by lecturer)
+- `tests.fraig`: Testcases and Dofiles.
+- Makefile: GNU makefile.
+
 ## Compilation
 Type `make` in this directory, then a binary file named `fraig` will be compiled in the directory `bin`.
+
+---
+
+Compilation flags are declared in `src/Makefile.in`.
+
+## Usage
+There are many commands, so please check the specification.

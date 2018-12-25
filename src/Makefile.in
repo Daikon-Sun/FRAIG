@@ -8,8 +8,8 @@ LIBDIR    = ../../lib
 EXTLINK   = $(PKGNAME).d
 LIBDEPEND = $(LIBDIR)/lib.d
 
-CXX       = g++-7
-CCC       = gcc-7
+CXX       = g++
+CCC       = gcc
 AR        = ar cr
 ECHO      = /bin/echo
 

@@ -28,7 +28,7 @@ Compilation is tested on gcc/g++ 4.8.5.
 - Makefile: GNU makefile.
 
 ## Compilation
-Type `make` in this directory, then a binary file named `fraig` will be compiled in the directory `bin`.
+Type `make` in this directory, then a binary file named `fraig` will be compiled.
 
 Sometimes you may need to type "some" `make clean`s, then "some" `make`s.
 

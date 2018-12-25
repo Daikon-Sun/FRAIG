@@ -11,3 +11,12 @@
   - Simulate boolean logic to group potentially equivalent gates into functionally equivalent candidate (FEC) pair.
   - Use a boolean satisfiability solver to formally prove or disprove FEC pair and merge equivalent gates.
 - My program ranks top 5% among more than a hundred of students.
+
+## Requirements
+Due to some old libraries that are compiled without the flag `-fPIC`, compilation must be done by gcc/g++ that is older than 4.8.5.
+
+## Specification
+`spec/FraigProject.pdf`
+
+## Compilation
+Type `make` in this directory, then a binary file named `fraig` will be compiled in the directory `bin`.

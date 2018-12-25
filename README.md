@@ -1,0 +1,13 @@
+# Functionally Reduced And-Inverter Graph (FRAIG)
+- This is the final project of Data Structure and Programming
+  - Term: Fall 2015
+  - Lecturer: [Prof. Chung-Yang (Ric) Huang](http://cc.ee.ntu.edu.tw/~ric/).
+- In this project, I implemented a special circuit representation, FRAIG, from a circuit description file.
+- The program performs the following processes:
+  - Parse a circuit description file in the AIGER format.
+  - Sweep out the gates that cannot be reached from primary outputs (excluding primary inputs). After this operation, all the gates that are originally “defined-but-not-used” will be deleted.
+  - Perform trivial circuit optimizations without altering the functionality, such as replacing a always-inverse fanins of an AND gate by a constant zero.
+  - Perform structural hash to merge the structurally equivalent signals (i.e. replace a gate with its functionally equivalent one) by comparing their gate types and permuting their inputs.
+  - Simulate boolean logic to group potentially equivalent gates into functionally equivalent candidate (FEC) pair.
+  - Use a boolean satisfiability solver to formally prove or disprove FEC pair and merge equivalent gates.
+- My program ranks top 5% among more than a hundred of students.

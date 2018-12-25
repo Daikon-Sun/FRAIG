@@ -3,7 +3,7 @@ EXTHDRS   =
 
 include ../Makefile.in
 
-BINDIR    = ../../bin
+BINDIR    = ../..
 TARGET    = $(BINDIR)/$(EXEC)
 
 target: $(TARGET)

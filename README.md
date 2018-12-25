@@ -30,6 +30,8 @@ Compilation is tested on gcc/g++ 4.8.5.
 ## Compilation
 Type `make` in this directory, then a binary file named `fraig` will be compiled in the directory `bin`.
 
+Sometimes you may need to type "some" `make clean`s, then "some" `make`s.
+
 ---
 
 Compilation flags are declared in `src/Makefile.in`.

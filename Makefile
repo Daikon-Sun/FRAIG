@@ -22,8 +22,6 @@ main:
 	@echo "Checking $(MAIN)..."
 	@cd src/$(MAIN); \
 		make -f make.$(MAIN) --no-print-directory INCLIB="$(LIBS)" EXEC=$(EXEC);
-	@ln -fs bin/$(EXEC) .
-#	@strip bin/$(EXEC)
 
 clean:
 	@for pkg in $(SRCPKGS); \
@@ -37,11 +35,10 @@ clean:
 	@echo "Removing $(SRCLIBS)..."
 	@cd lib; rm -f $(SRCLIBS)
 	@echo "Removing $(EXEC)..."
-	@rm -f bin/$(EXEC)
+	@rm -f $(EXEC)
 
 cleanall: clean
-	@echo "Removing bin/*..."
-	@rm -f bin/*
+	@rm -f $(EXEC)
 
 ctags:	  
 	@rm -f src/tags
